@@ -16,8 +16,7 @@ h1, h2, h3 {
 
 
 
-/* header y navbar  */
-
+/* Header y Navbar */
 .header {
   background-color: #f8b195;
   padding: 10px 20px;
@@ -27,6 +26,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Permite que el contenido se adapte en pantallas pequeñas */
 }
 
 .logo {
@@ -66,6 +66,41 @@ h1, h2, h3 {
 .nav-links li a:hover {
   color: #333333;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Cambia el menú a disposición vertical */
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    flex-direction: column; /* Alinea todo en columna */
+  }
+
+  .logo-text {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto del logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem; /* Ajusta el tamaño de los enlaces */
+  }
+}
+
 
 /* ///////////////////////////////////////////////////////// */
 
@@ -316,29 +351,41 @@ input[type="radio"] {
 /* Equipo de Chefs */
 .equipo {
   text-align: center;
+  padding: 2rem;
 }
 
 .equipo h2 {
   font-size: 1.8rem;
   color: #6d4c41;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.equipo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .chef {
-  display: inline-block;
-  width: 30%;
-  margin: 1rem;
+  flex: 1 1 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   background-color: #f8b195;
   text-align: center;
+  height: 100%;
 }
 
 .chef img {
-  width: 100%;
-  height: auto;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
@@ -347,6 +394,22 @@ input[type="radio"] {
   color: #6d4c41;
   margin-bottom: 0.5rem;
 }
+
+.chef p {
+  flex-grow: 1;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .equipo h2 {
+    font-size: 1.5rem;
+  }
+
+  .equipo-container {
+    flex-direction: column;
+  }
+}
+
 
 /* Contacto */
 .contact-section {
