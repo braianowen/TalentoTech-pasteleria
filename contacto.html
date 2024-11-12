@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Cursos de Pastelería Poupe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <nav class="navbar">
+        <a href="/" class="logo-link">
+          <div class="logo">
+            <img
+              src="imagenes/poupee.png"
+              alt="Logo de Pastelería"
+              class="logo-img"
+            />
+            <span class="logo-text">Cursos de Pastelería</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="acerca_de.html">Acerca de</a></li>
+          <li><a href="/#cursos">Cursos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <h2>Contacto</h2>
+        <p>
+          Por favor, completa el formulario para ponerte en contacto con
+          nosotros.
+        </p>
+
+        <form class="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="type">Tipo de Consulta:</label>
+          <select id="type" name="type">
+            <option value="general">General</option>
+            <option value="cursos">Cursos</option>
+            <option value="inscripcion">Inscripción</option>
+            <option value="otros">Otros</option>
+          </select>
+
+          <label for="message">Consulta:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <p>&copy; 2024 Cursos de Pastelería. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
