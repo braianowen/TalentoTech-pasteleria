@@ -8,6 +8,7 @@
 - **Cursos Disponibles**: Muestra diferentes cursos de pastelería, cada uno con una descripción y un enlace para ver más detalles.
 - **Modal de Login**: Permite a los usuarios iniciar sesión en su cuenta o registrarse.
 - **Página Acerca de**: Información sobre la pastelería y los instructores.
+- **Página Contacto**: Formulario de contacto para resolver cualquier duda.
 
 ## Requisitos
 
@@ -18,7 +19,7 @@
 
 1. Clona este repositorio en tu máquina local usando:
    ```bash
-   git clone https://github.com/braianowen/TalentoTech.git
+   git clone https://github.com/braianowen/TalentoTech-pasteleria.git
 
 2. Navega al directorio del proyecto:
    ```bash
